@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Header CSS */
+header {
+  width: 100%;
+}
+nav {
+  margin: 20px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title img {
+  width: 100%;
+}
+.header-title h3 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #0b0223;
+  margin-left: 10px;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+.menu-item li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3c354f;
+}
+.follow-us {
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+
+/* Responsive CSS */
+/* For Mobile */
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 80%;
+    row-gap: 50px;
+  }
+  .menu-item {
+    flex-direction: column;
+    margin-left: 50px;
+    row-gap: 20px;
+  }
+  .follow-us{
+    width: 180px;
+  }
+}
