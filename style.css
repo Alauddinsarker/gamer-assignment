@@ -294,6 +294,56 @@ body {
   font-size: 16px;
   font-weight: 600;
 }
+/* Footer CSS */
+footer {
+  background: #0b0223;
+  text-align: center;
+  padding: 100px;
+}
+.footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+.footer-title h3 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+.text-a {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.text-a a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+.icon-a a {
+  color: #fff;
+  padding: 10px;
+  font-size: 32px;
+}
+.condition-a {
+  margin: 30px 0px;
+}
+.condition-a a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+.footer-para {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
 /* Responsive CSS */
 /* For Mobile */
 @media screen and (max-width: 576px) {
@@ -410,7 +460,7 @@ body {
   /* More Games CSS */
   .more-games {
     margin: 0;
-    padding: 0;
+    padding: 50px 0px;
   }
   .single-game {
     width: 30%;
@@ -421,6 +471,19 @@ body {
   .single-game img {
     width: 30px;
     height: 30px;
+  }
+  /* Footer */
+  footer {
+    padding: 50px 0px;
+  }
+  .text-a {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 20px;
+  }
+  .condition-a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -535,7 +598,7 @@ body {
   /* More Games CSS */
   .more-games {
     margin: 0;
-    padding: 0;
+    padding: 50px 0px;
   }
   .single-game {
     width: 30%;
@@ -546,5 +609,18 @@ body {
   .single-game img {
     width: 30px;
     height: 30px;
+  }
+  /* Footer */
+  footer {
+    padding: 50px 0px;
+  }
+  .text-a {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 20px;
+  }
+  .condition-a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
