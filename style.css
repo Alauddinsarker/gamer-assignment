@@ -223,8 +223,8 @@ body {
   margin-bottom: 0px;
 }
 .play-content {
-  width: 25%;
-  padding: 100px;
+  width: 28%;
+  padding: 100px 0px;
 }
 .play-content h3 {
   color: #0b0223;
@@ -256,8 +256,43 @@ body {
 .play-img-inside {
   width: 50%;
   position: absolute;
-  bottom: -150px;
-  left: -200px;
+  bottom: -100px;
+  left: -100px;
+}
+/* More Games CSS */
+.more-games {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  padding: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+.single-game {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 40px;
+  width: 18%;
+  gap: 5px;
+  padding: 4px;
+}
+.single-game:hover {
+  border: 1px solid #f948b2;
+  color: #f948b2;
+}
+.single-game img {
+  width: 50px;
+  height: 50px;
+}
+.single-game p {
+  color: #0b0223;
+  font-size: 16px;
+  font-weight: 600;
 }
 /* Responsive CSS */
 /* For Mobile */
@@ -372,6 +407,21 @@ body {
     bottom: -60px;
     left: -60px;
   }
+  /* More Games CSS */
+  .more-games {
+    margin: 0;
+    padding: 0;
+  }
+  .single-game {
+    width: 30%;
+  }
+  .single-game p {
+    font-size: 16px;
+  }
+  .single-game img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* For Tablet */
@@ -481,5 +531,20 @@ body {
     position: absolute;
     bottom: -60px;
     left: -60px;
+  }
+  /* More Games CSS */
+  .more-games {
+    margin: 0;
+    padding: 0;
+  }
+  .single-game {
+    width: 30%;
+  }
+  .single-game p {
+    font-size: 16px;
+  }
+  .single-game img {
+    width: 30px;
+    height: 30px;
   }
 }
