@@ -5,6 +5,7 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
+/* Nav CSS */
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -49,19 +50,137 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-
+/* Banner CSS */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content-wrapper {
+  width: 100%;
+  /* padding: 100px 110px 100px 150px; */
+  background-image: url(./images/group14.png);
+  background-size: 100%;
+}
+.banner-content {
+  padding: 100px 110px 0px 150px;
+}
+.banner-content h3 {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+}
+.banner-content h1 {
+  font-size: 95px;
+  font-style: normal;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-content p {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.banner-btn {
+  margin: 50px 0;
+  padding: 0px 0px 0px 150px;
+}
+.banner-btn .sign-in {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px 40px;
+  border: 0;
+  border-radius: 48px;
+  background: #ff42a5;
+}
+.banner-btn .go-rogue {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px 40px;
+  border: 0;
+  border-radius: 48px;
+  background: #4ec5f7;
+  margin-left: 10px;
+}
+.banner-img {
+  width: 100%;
+  margin-right: 150px;
+}
+.banner-img img {
+  width: 100%;
+}
 
 /* Responsive CSS */
 /* For Mobile */
-@media screen and (max-width: 576px){
-    .nav-container {
-        flex-direction: column;
-        width:100%
-    }
-    .header-title{
-        margin: 50px auto;
-    }
-    .menu-item{
-        flex-direction: column;
-    }
+@media screen and (max-width: 576px) {
+  /* Nav */
+  .nav-container {
+    flex-direction: column;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+  }
+  .header-title {
+    margin: 50px auto;
+  }
+  .menu-item {
+    flex-direction: column;
+  }
+
+  /* Banner */
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    width: 100%;
+    padding: 10px;
+    margin: 50px;
+  }
+  .banner-img {
+    width: 100%;
+    padding: 10px;
+    margin: 50px;
+  }
+  .banner-btn {
+    padding-left: 50px;
+  }
+}
+
+/* For Tablet */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .nav-container {
+    flex-direction: column;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+  }
+  .header-title {
+    margin: 50px auto;
+  }
+  .menu-item {
+    flex-direction: column;
+  }
+  /* Banner */
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    width: 100%;
+    padding: 10px;
+    margin: 50px;
+  }
+  .banner-img {
+    width: 100%;
+    padding: 10px;
+    margin: 50px;
+  }
+  .banner-btn {
+    padding-left: 50px;
+  }
 }
