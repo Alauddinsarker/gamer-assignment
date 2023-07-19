@@ -367,16 +367,16 @@ footer {
   }
   .banner-content {
     width: 100%;
-    padding: 10px;
-    margin: 50px;
+    padding: 0px;
+    margin: 0px;
   }
   .banner-content h1 {
     font-size: 80px;
   }
   .banner-img {
     width: 100%;
-    padding: 10px;
-    margin: 50px;
+    padding: 0px;
+    margin: 0px;
   }
   .banner-btn {
     padding-left: 50px;
