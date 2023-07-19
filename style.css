@@ -281,9 +281,11 @@ body {
   gap: 5px;
   padding: 4px;
 }
-.single-game:hover {
+.single-game:hover{
   border: 1px solid #f948b2;
-  color: #f948b2;
+}
+.single-game p:hover{
+  color:#f948b2;
 }
 .single-game img {
   width: 50px;
