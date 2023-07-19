@@ -172,6 +172,49 @@ body {
   font-weight: 700;
 }
 
+/* Online Games CSS */
+.online-container {
+  margin: 100px 0px;
+  border: 1px solid red;
+}
+.online-container h3 {
+  text-align: center;
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.funny-video {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+}
+.online-container p {
+  text-align: center;
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.card-container {
+  border: 1px solid green;
+  margin: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.card-container .single-card img {
+  width: 100%;
+}
+.card-container .single-card p {
+  text-align: left;
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+}
 /* Responsive CSS */
 /* For Mobile */
 @media screen and (max-width: 576px) {
@@ -235,6 +278,22 @@ body {
   .gamer-container .gamer-content-btn {
     justify-content: center;
   }
+
+  /* Online Section */
+  .online-container {
+    width: 100%;
+  }
+  .card-container {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  .single-card {
+    width: 100%;
+  }
+  .card-container .single-card img {
+    width: 100%;
+  }
 }
 
 /* For Tablet */
@@ -294,5 +353,21 @@ body {
   }
   .gamer-container .gamer-content-btn {
     justify-content: center;
+  }
+  /* Online Section */
+  .online-container {
+    width: 100%;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    width: 100%;
+  }
+  .single-card {
+    width: 100%;
+  }
+  .card-container .single-card img {
+    width: 100%;
   }
 }
